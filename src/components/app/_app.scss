@@ -1,0 +1,16 @@
+.app {
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 64px;
+  padding: 0 64px;
+  /* 2x64 margin top,bottom= 128  */
+  height: calc(100% - 128px);
+
+  box-sizing: border-box;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  vertical-align: middle;
+}

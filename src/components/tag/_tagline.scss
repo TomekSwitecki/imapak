@@ -1,0 +1,24 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.tag {
+    display: flex;
+    padding: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: $light--gray;
+    width: fit-content;
+
+    .tag__content {
+        color: $primary;
+        font-family: Nippo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+}

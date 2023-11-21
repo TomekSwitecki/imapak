@@ -1,0 +1,93 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.hero__container {
+  grid-column: 1 / span 12;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 128px;
+  padding: 32px;
+
+
+  max-width: 1280px;
+  max-height: 876px;
+
+
+  .hero__container--right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    img:nth-child(2) {
+      max-height: 140px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+}
+
+.hero__container::after {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: url("/src/resources/HERO_PATTERN.png") $black;
+  height: calc(100% - 128px);
+  z-index: -1;
+}
+
+.hero__footer-container {
+  display: flex;
+  flex-direction: row;
+
+  .hero__footer-content {
+    width: 100%;
+    background: $white;
+  }
+
+}
+
+.hero__footer-content {
+  display: flex;
+
+  align-items: center;
+  padding-left: 32px;
+}
+
+.heritage {
+  .heritage-text--strong {
+    color: $black;
+    font-family: Nippo;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 103%;
+  }
+
+  .heritage-text--medium {
+    color: $lighter--black;
+
+    font-family: Nippo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 103%;
+  }
+
+  .heritage-text {
+    color: $black;
+    font-family: Nippo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 103%;
+  }
+}

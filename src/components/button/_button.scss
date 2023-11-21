@@ -1,0 +1,138 @@
+@import "../../colors.scss";
+@import "../../shadows.scss";
+@import "../../anim.scss";
+
+.button {
+    font-family: Nippo;
+    position: relative;
+    display: flex;
+    padding: 13px 48px 15px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    outline: none;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+
+
+    cursor: pointer;
+    @include smooth;
+
+    &.button--compact {
+        padding: 10px 24px 12px 24px;
+    }
+
+    &.button--pill {
+        border-radius: 64px;
+
+    }
+
+    &.button--rounded {
+        border-radius: 8px;
+
+    }
+
+    &.button--filled {
+
+        &.button--default {
+            color: $white;
+            background: $black;
+            text-align: left;
+            justify-content: left;
+            padding-inline: 30px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-transform: uppercase;
+
+            fill: $white;
+
+            &.button--appended {
+                justify-content: space-between;
+            }
+
+        }
+
+        &.button--primary {
+            display: flex;
+            width: 260px;
+            height: 80px;
+            padding: 15px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-bottom: 4px solid #B6AC9E;
+            background: $tertiary;
+            background-blend-mode: difference, normal;
+
+            color: $primary;
+            font-family: Nippo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        &.button--primary:hover {
+            // background: $button-green-hover;
+        }
+    }
+
+    &.button--ghost {
+        display: flex;
+        padding: 13px 48px 15px 48px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+
+        &.button--default {
+            color: $black;
+            background: none;
+
+            text-align: center;
+            font-family: Nippo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 378;
+            line-height: normal;
+
+        }
+    }
+
+
+}
+
+.button__append {
+    display: none;
+
+}
+
+.button--appended {
+
+
+    .button__append {
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+// button[disabled] {
+//     background: $gray-1 !important;
+//     color: $gray-2 !important;
+//     cursor: not-allowed !important;
+// }
+
+
+.button--ghost:hover {
+    cursor: pointer;
+    @include hover(false);
+}

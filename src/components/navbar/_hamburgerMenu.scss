@@ -1,0 +1,103 @@
+.hamburger__container {
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  padding: 12px 24px;
+
+  background: black; // Replaced with black
+  border-radius: 4px;
+  align-items: center;
+  // Removed box-shadow
+}
+
+.hamburger:hover {
+  background: black; // Replaced with black
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  outline: 2px solid black; // Replaced with black
+
+  border-radius: 6px;
+  // Removed box-shadow
+
+  .hamburger__lines-wrapper {
+    .line {
+      background-color: black; // Replaced with black
+    }
+  }
+}
+
+.hamburger__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+  align-items: center;
+}
+
+.hamburger__lines-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.line {
+  width: 18px;
+  height: 2px;
+  background-color: black; // Replaced with black
+  border-radius: 4px;
+}
+
+.hamburger__menu {
+  color: black; // Replaced with black
+  user-select: none;
+  text-align: center;
+  // Removed text-shadow
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.hamburger__dropdown {
+  display: none;
+  position: absolute;
+  top: 77px;
+  left: -135px;
+  flex-direction: column;
+  gap: 42px;
+  background: black; // Replaced with black
+  padding: 24px;
+  // Removed box-shadow
+  border-bottom: 5px solid black; // Replaced with black
+  // Removed border-radius
+}
+
+/* Add any additional styling needed for your navbar */
+@media (max-width: 620px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger__dropdown--active {
+    display: flex;
+  }
+
+  .navbar__buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .hamburger {
+    padding: 16px 16px;
+  }
+
+  .hamburger__dropdown {
+    left: -190px;
+  }
+}

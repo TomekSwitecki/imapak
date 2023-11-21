@@ -1,0 +1,14 @@
+@import "../../colors.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.header__logotype {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}

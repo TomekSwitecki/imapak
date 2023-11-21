@@ -1,0 +1,57 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+@import "../../shadows.scss";
+
+.cta__wrapper {
+  .button {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .cta-title__container {
+    display: flex;
+    max-width: 656px;
+    max-height: 402px;
+    padding: 48px 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    flex-shrink: 0;
+
+    background-color: $white;
+  }
+
+  .cta-title {
+    color: $black;
+    font-family: Nippo;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 102px;
+  }
+
+
+  .cta__content-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    height: clamp(335px, 335px, 335px);
+
+    padding: 32px 64px 64px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    background: url("/src/resources/CTA_BG.png") $light--gray;
+
+
+    .cta__paragraph {
+      color: $black;
+      font-family: Nippo;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 378;
+      line-height: normal;
+    }
+  }
+}

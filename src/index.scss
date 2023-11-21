@@ -12,3 +12,14 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  font-family: 'Nippo-Regular', sans-serif;
+  background: url("/src/resources/SpeedArrowsOpacity.png"), #FFF;
+  background-size: 80px;
+}
+
+.grid-fill {
+  max-width: 1440px;
+  grid-column: 1 / span 12;
+}
