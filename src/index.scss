@@ -23,3 +23,20 @@ body {
   max-width: 1440px;
   grid-column: 1 / span 12;
 }
+
+.text {
+  font-family: Nippo;
+}
+
+.text--highlight {
+  color: $tertiary;
+
+}
+
+.text--regular {
+  font-weight: 400;
+}
+
+.text--light {
+  font-weight: 300;
+}
