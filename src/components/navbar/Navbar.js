@@ -36,7 +36,7 @@ export const MenuOptions = ({ closeMenu, isHamburgerMenu }) => {
       <Button
         type={ButtonType.Filled}
         color={ButtonColor.Primary}
-        append={<box-icon name='right-arrow-alt' ></box-icon>}
+        append={<box-icon name='chevron-right' ></box-icon>}
         text={"Skontaktuj się!"}
         onClick={() => handleScrollToId("kontakt")}
       />

@@ -9,12 +9,10 @@
   justify-content: center;
 
   margin-top: 128px;
-  padding: 32px;
-
 
   max-width: 1280px;
   max-height: 876px;
-
+  box-shadow: 0px 4.26158px 2.21381px 0px rgba(0, 0, 0, 0.05), 0px 10.24116px 5.32008px 0px rgba(0, 0, 0, 0.08), 0px 19.28319px 10.01724px 0px rgba(0, 0, 0, 0.09), 0px 34.39791px 17.86905px 0px rgba(0, 0, 0, 0.11), 0px 64.33752px 33.42209px 0px rgba(0, 0, 0, 0.14), 0px 154px 80px 0px rgba(0, 0, 0, 0.19);
 
   .hero__container--right {
     display: flex;
@@ -36,24 +34,39 @@
 
 .hero__container::after {
   top: 0;
+  left: 0;
   content: "";
   position: absolute;
   width: 100%;
   background: url("/src/resources/HERO_PATTERN.png") $black;
-  height: calc(100% - 128px);
+  height: calc(100% - 186px);
   z-index: -1;
 }
 
 .hero__footer-container {
   display: flex;
   flex-direction: row;
+  position: relative;
 
   .hero__footer-content {
     width: 100%;
     background: $white;
+    overflow: hidden;
   }
 
 }
+
+// .hero__footer-container::after {
+//   content: "";
+//   position: absolute;
+//   bottom: -93px;
+//   right: -110px;
+//   background: url("/src/resources/SpeedArrows.png");
+//   width: 274px;
+//   height: 174px;
+
+//   opacity: 0.04;
+// }
 
 .hero__footer-content {
   display: flex;
@@ -90,4 +103,34 @@
     font-weight: 400;
     line-height: 103%;
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .hero__container {
+    height: fit-content;
+    max-height: unset;
+    flex-direction: column;
+
+    .hero__container--right {
+      display: none;
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 730px) {
+  .hero__footer-container {
+    flex-direction: column;
+
+    .hero__footer-content {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 32px;
+    }
+  }
+
+
 }

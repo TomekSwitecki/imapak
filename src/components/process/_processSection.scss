@@ -1,4 +1,5 @@
 @import "../../colors.scss";
+@import "../../anim.scss";
 
 .process_wrapper {
     background-color: $light--gray;
@@ -15,7 +16,12 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+
+        .tag {
+            background-color: #e0e0e0;
+        }
     }
+
 
 
 
@@ -43,6 +49,7 @@
     display: flex;
     flex-shrink: 1;
     margin-bottom: 64px;
+    @include smooth;
 
     img {
         width: 100%;
@@ -72,8 +79,53 @@ h1::after {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: $black;
+    background-color: $primary;
     height: 64px;
     width: 427px;
     z-index: 2;
+    @include smooth;
+}
+
+// .proccess_container:hover {
+//     .proccess_container--left {
+//         margin-bottom: 0;
+//         @include smooth;
+//     }
+
+
+// }
+
+.proccess_container--right:hover::after {
+
+    width: 100%;
+    @include smooth;
+}
+
+
+@media screen and (max-width: 1064px) {
+    .proccess_container {
+        flex-direction: column-reverse;
+    }
+
+    .process_wrapper {
+
+        .proccess_container--left,
+        .proccess_container--right {
+
+            max-width: unset;
+            width: 100%;
+        }
+
+        .proccess_container--right {
+            padding: 48px;
+            padding-bottom: 96px;
+        }
+
+    }
+
+    .proccess_container--right::after {
+        width: 75%;
+        height: 32px;
+        @include smooth;
+    }
 }

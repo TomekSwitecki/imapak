@@ -1,0 +1,181 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.footer {
+    width: 100%;
+    background: url("/src/resources/HERO_PATTERN.png") $black;
+}
+
+.footer__container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1440px;
+    min-height: 577px;
+    height: auto;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+
+}
+
+.footer__copyritgh-section {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/src/resources/SpeedArrows.png") $black;
+    background-size: 25px;
+    background-blend-mode: color-dodge;
+}
+
+.footer__copyrights {
+    color: $white;
+    font-family: Nippo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 378;
+    line-height: normal;
+    opacity: 0.25;
+
+
+}
+
+.footer__title {
+    color: #FFFFFF;
+    font-family: Nippo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    padding-inline: 64px;
+    padding-top: 64px;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    img {
+        mix-blend-mode: lighten;
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.footer__card {
+    box-sizing: border-box;
+    display: flex;
+    width: 431px;
+    height: 208px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border: 1px solid #434445;
+
+    background: $black;
+    overflow: hidden;
+
+    &.footer__card--highlight {
+        background: $tertiary;
+        position: relative;
+
+        .footer__card-text--bold {
+            color: $black;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+
+        .footer__hr {
+            background: $primary;
+        }
+    }
+
+
+
+    .footer__card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__card-text--bold {
+        color: $white;
+        font-family: Nippo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .footer__card-text--light {
+        color: $white;
+        font-family: Nippo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 200;
+    }
+
+    .footer__card-text--link {
+        color: $tertiary;
+        font-family: Nippo;
+        font-size: 14px;
+
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .footer__link {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+    }
+
+    .footer__card-text--link:hover {
+        text-decoration: underline;
+    }
+
+    .footer__hr {
+        width: 150px;
+        height: 2px;
+        background: $tertiary;
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+}
+
+.footer__card--highlight::after {
+    content: "";
+    position: absolute;
+    bottom: -110px;
+    left: 236px;
+    background: url("/src/resources/LOGO.png");
+    width: 281px;
+    height: 293px;
+    mix-blend-mode: darken;
+    opacity: 0.2;
+    transform: rotate(344deg);
+}
+
+@media screen and (max-width: 865px) {
+    .footer__title {
+        text-align: left;
+    }
+}

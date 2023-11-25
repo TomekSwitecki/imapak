@@ -9,3 +9,9 @@
 @use "./components/client/clientsSection";
 @use "./components/container/container";
 @use "./components/process/processSection";
+@use "./components/PlainCard/plain-card";
+@use "./components/CardsSection/cardsSection";
+@use "./components/ListItem/listItem";
+@use "./components/PartnersSection/partnersSection";
+@use "./components/PartnersSection/partnersCard.scss";
+@use "./components/footer/footer";

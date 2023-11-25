@@ -1,0 +1,134 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.plain-card {
+    box-sizing: border-box;
+    font-family: Nippo;
+    position: relative;
+    display: flex;
+    max-width: 426.5px;
+    width: 100%;
+    height: 356px;
+    padding: 64px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid $square-card-stroke;
+    background: $white;
+    gap: 32px;
+    @include smooth;
+
+    .plain-card__ilustration {
+        width: 100px;
+        height: 100px;
+    }
+
+    .plain-card__title {
+        color: $primary;
+        font-family: Nippo;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+
+    .plain-card__description {
+        color: $lighter--black;
+        font-family: Nippo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include smooth;
+    }
+
+    .plain-card__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        z-index: 4;
+    }
+
+
+}
+
+.plain-card:hover {
+    box-shadow: 0px 0px 0px 16px rgba(0, 0, 0, 0.03) inset;
+
+    .plain-card__description {
+        color: $black;
+        @include smooth;
+    }
+
+    background-image: url("/src/resources/SpeedArrowsOpacity.png");
+    @include smooth;
+}
+
+
+.plain-card--modern {
+    background: $light--gray;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+
+
+    .tag {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+    }
+
+    .plain-card__ilustration {
+        position: absolute;
+        right: -356px;
+        top: 36px;
+        width: unset;
+        height: unset;
+        @include smooth;
+    }
+}
+
+.plain-card--modern::after {
+
+    content: "";
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    background: url("/src/resources/SpeedArrows.png");
+    width: 300px;
+    height: 174px;
+
+    opacity: 0.05;
+    @include smooth;
+}
+
+.plain-card__content {
+    .plain-card--modern__title {
+        color: $primary;
+        font-family: Outfit;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        max-width: 220px;
+    }
+}
+
+.plain-card--modern:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 75px;
+    left: 80px;
+    background: url("/src/resources/SpeedArrows.png");
+    width: 300px;
+    height: 174px;
+    opacity: 0.08;
+    @include smooth;
+}
+
+.plain-card--modern:hover {
+    .plain-card__ilustration {
+        transform: scale(1.05);
+        @include smooth;
+    }
+}

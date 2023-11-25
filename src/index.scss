@@ -1,5 +1,6 @@
 @import "partials";
 @import "colors";
+@import "anim";
 
 img {
   pointer-events: none;
@@ -11,6 +12,7 @@ img {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include smooth;
 }
 
 body {
@@ -39,4 +41,10 @@ body {
 
 .text--light {
   font-weight: 300;
+}
+
+@media screen and (max-width: 530px) {
+  .app {
+    padding-inline: 24px;
+  }
 }

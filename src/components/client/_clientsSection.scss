@@ -1,17 +1,19 @@
 @import "../../colors.scss";
+@import "../../anim.scss";
 
 .clients_wrapper {
     display: flex;
     flex-direction: column;
     gap: 0;
 
-    margin-top: 128px;
+    margin-top: 96px;
 
     .clients_wrapper__logotypes {
         display: flex;
         flex-direction: row;
         gap: 0;
     }
+
 }
 
 .header {
@@ -71,20 +73,20 @@
     width: 100%;
 
     height: 190px;
-    padding: 48px 0;
+    padding: 48px 24px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background: $white;
-    border-top: 1px solid $square-card-stroke;
-    border-bottom: 1px solid $square-card-stroke;
-    border-left: 1px solid $square-card-stroke;
+    border: 1px solid $square-card-stroke;
+
 
     img {
         opacity: 0.5;
         filter: saturate(0);
         width: 100%;
         object-fit: scale-down;
+        @include smooth;
 
     }
 
@@ -92,4 +94,51 @@
 
 .client-card:last-of-type {
     border-right: 1px solid $square-card-stroke;
+}
+
+.client-card:hover {
+    img {
+        opacity: 1;
+        filter: saturate(1);
+        @include smooth;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .clients_wrapper {
+        margin-top: 48px;
+
+        .header {
+            flex-direction: column;
+
+            .header__left {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .header__right {
+                width: 100%;
+
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        .clients_wrapper__logotypes {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header__middle {
+            display: none;
+        }
+
+        .client-card {
+            width: 50%;
+        }
+    }
+
 }

@@ -45,10 +45,27 @@
             text-align: left;
             justify-content: left;
             padding-inline: 30px;
-            font-weight: 300;
+            font-weight: 400;
             text-transform: uppercase;
 
             fill: $white;
+
+            &.button--appended {
+                justify-content: space-between;
+            }
+
+        }
+
+        &.button--gray {
+            color: $black;
+            background: $light--gray;
+            text-align: left;
+            justify-content: left;
+            padding-inline: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            fill: $black;
 
             &.button--appended {
                 justify-content: space-between;
@@ -66,8 +83,9 @@
             gap: 10px;
             flex-shrink: 0;
             border-bottom: 4px solid #B6AC9E;
-            background: $tertiary;
-            background-blend-mode: difference, normal;
+            background: url("/src/resources/SpeedArrows.png") $tertiary;
+            background-blend-mode: screen;
+            background-size: 130px;
 
             color: $primary;
             font-family: Nippo;
@@ -76,10 +94,32 @@
             font-weight: 500;
             line-height: normal;
             text-transform: uppercase;
+
+            stroke-width: 2px;
+            @include smooth;
         }
 
         &.button--primary:hover {
-            // background: $button-green-hover;
+            background: url("/src/resources/SpeedArrows.png") $primary;
+            background-blend-mode: color-dodge;
+            background-size: 160px;
+            color: $white;
+            fill: $white;
+            border-bottom: 4px solid #0D1F28;
+            gap: 0px;
+            @include smooth;
+        }
+
+        &.button--default:hover {
+            background: $primary;
+            color: $white;
+            fill: $white;
+        }
+
+        &.button--gray:hover {
+            background: $primary;
+            color: $white;
+            fill: $white;
         }
     }
 

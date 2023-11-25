@@ -1,7 +1,13 @@
 import React from "react";
 import Button, { ButtonShape, ButtonColor, ButtonType } from "../button/Button";
 import { _scrollTo } from "../navbar/utils";
-
+const handleScrollToId = (id) => {
+  const element = document.getElementById(id);
+  console.log(element);
+  if (element) {
+    _scrollTo(id, 70);
+  }
+};
 export function CTA() {
   return (
     <div className="cta__wrapper">
@@ -22,7 +28,7 @@ export function CTA() {
           color={ButtonColor.Default}
           append={<box-icon name='right-arrow-alt' ></box-icon>}
           text={"Dowiedz się więcej!"}
-          onClick={() => handleScrollToId("kontakt")}
+          onClick={() => handleScrollToId("about_section")}
         />
       </div>
 

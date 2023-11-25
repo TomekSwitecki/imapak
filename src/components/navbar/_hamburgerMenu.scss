@@ -1,32 +1,31 @@
+@import "../../shadows.scss";
+@import "../../colors.scss";
+@import "../../anim.scss";
+
 .hamburger__container {
   position: relative;
 }
 
 .hamburger {
+  font-family: Nippo;
   display: none;
   cursor: pointer;
-
+  color: $white;
   padding: 12px 24px;
 
-  background: black; // Replaced with black
-  border-radius: 4px;
+  background: $primary;
+
   align-items: center;
-  // Removed box-shadow
+  @include smooth;
 }
 
 .hamburger:hover {
-  background: black; // Replaced with black
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  outline: 2px solid black; // Replaced with black
-
-  border-radius: 6px;
-  // Removed box-shadow
+  background: $black;
+  @include smooth;
 
   .hamburger__lines-wrapper {
     .line {
-      background-color: black; // Replaced with black
+      background-color: $white;
     }
   }
 }
@@ -47,18 +46,17 @@
 .line {
   width: 18px;
   height: 2px;
-  background-color: black; // Replaced with black
+  background-color: $white;
   border-radius: 4px;
 }
 
 .hamburger__menu {
-  color: black; // Replaced with black
+  color: $white;
   user-select: none;
   text-align: center;
-  // Removed text-shadow
-  font-family: Poppins;
+  font-family: Nippo;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   white-space: nowrap;
 }
@@ -66,15 +64,13 @@
 .hamburger__dropdown {
   display: none;
   position: absolute;
-  top: 77px;
-  left: -135px;
+  top: 50px;
+  left: -167px;
   flex-direction: column;
   gap: 42px;
-  background: black; // Replaced with black
+  background: $light--gray;
   padding: 24px;
-  // Removed box-shadow
-  border-bottom: 5px solid black; // Replaced with black
-  // Removed border-radius
+  border-bottom: 5px solid #dedddd;
 }
 
 /* Add any additional styling needed for your navbar */

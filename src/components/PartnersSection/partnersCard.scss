@@ -1,0 +1,37 @@
+@import "../PlainCard/plain-card";
+
+.partner-card {
+    @extend .plain-card;
+    position: relative;
+    padding: 32px;
+    gap: 8px;
+
+    .button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .partner-card__description {
+        color: #625F60;
+        font-family: Nippo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 378;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .partner-card__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+}
+
+.partner-card--empty {
+    background-color: $light--gray;
+    background-image: url("/src/resources/SpeedArrowsOpacity.png");
+}

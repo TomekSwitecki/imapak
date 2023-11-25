@@ -11,10 +11,16 @@ import MLEKOVITA from "./clients_logos/MLEKOVITA.png";
 import LOWICZ from "./clients_logos/ŁOWICZ.png";
 import POLMLEK from "./clients_logos/POLMLEK.png";
 import MLEKPOL from "./clients_logos/MLEKPOL.png";
-
+import { _scrollTo } from "../navbar/utils";
 export function ClientsSection() {
 
-
+    const handleScrollToId = (id) => {
+        const element = document.getElementById(id);
+        console.log(element);
+        if (element) {
+            _scrollTo(id, 70);
+        }
+    };
     return (
         <Container>
             <div className="clients_wrapper">
@@ -32,7 +38,7 @@ export function ClientsSection() {
                             color={ButtonColor.Default}
                             append={<box-icon name='right-arrow-alt' ></box-icon>}
                             text={"Dowiedz się więcej!"}
-                            onClick={() => handleScrollToId("kontakt")}
+                            onClick={() => handleScrollToId("partners_section")}
                         />
                     </div>
 

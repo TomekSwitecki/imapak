@@ -1,0 +1,28 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+.list-item {
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.list-item-label {
+    color: #625F60;
+    font-family: Nippo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 378;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.list-item-label:hover {
+    color: $black;
+    text-decoration-line: underline;
+    @include smooth;
+}

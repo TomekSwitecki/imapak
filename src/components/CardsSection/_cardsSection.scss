@@ -1,0 +1,26 @@
+.cards_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3 {
+        color: var(--Black, #221E1F);
+        font-family: Nippo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+#long_list {
+    height: fit-content;
+}

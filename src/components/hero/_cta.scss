@@ -20,6 +20,20 @@
     flex-shrink: 0;
 
     background-color: $white;
+    position: relative;
+  }
+
+  .cta-title__container::after {
+
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    right: -48px;
+    background: url("/src/resources/SpeedArrows.png");
+    width: 274px;
+    height: 174px;
+    transform: rotate(90deg);
+    opacity: 0.05;
   }
 
   .cta-title {
@@ -52,6 +66,36 @@
       font-style: normal;
       font-weight: 378;
       line-height: normal;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .cta__wrapper {
+    .cta-title__container {
+      width: 100%;
+      max-width: unset;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cta__wrapper {
+    .cta-title__container {
+      padding: 32px;
+      max-height: 330px;
+    }
+
+    .cta__content-wrapper {
+      height: 220px;
+      padding-left: 32px;
+    }
+
+    .cta-title {
+      font-size: 56px;
+      line-height: 86px;
     }
   }
 }
