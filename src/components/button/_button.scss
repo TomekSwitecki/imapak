@@ -147,6 +147,10 @@
 
 }
 
+.button--selected {
+    border-bottom: 4px solid $primary;
+}
+
 .button__append {
     display: none;
 
@@ -172,4 +176,5 @@
 .button--ghost:hover {
     cursor: pointer;
     @include hover(false);
+
 }

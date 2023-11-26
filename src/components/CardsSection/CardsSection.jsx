@@ -9,9 +9,10 @@ import ListItem from "../ListItem/ListItem";
 import MACHINE_1 from "../../resources/MACHINE_1.png";
 import CHEESE from "../../resources/CHEESE.png";
 import WORKER from "../../resources/WORKER_.png"
+import { useNavigate } from "react-router-dom";
 export function CardsSection() {
 
-
+    const navigate = useNavigate();
     const categories1 = [
         "Maszyny pakujące - Pionowe/Poziome",
         "Wagi wielogłowicowe",
@@ -31,6 +32,9 @@ export function CardsSection() {
         "Krojenie i wiórkowanie sera",
         "urządzenia do produkcju peletu,biomasy"
     ];
+    const handleCardClick = () => {
+        navigate("/about-us");
+    };
 
     const list2 = categories2.map((category, index) => (
         <ListItem key={index} label={category} />
@@ -44,7 +48,7 @@ export function CardsSection() {
                 <PlainCard imageSrc={ICON_SHIELD} description={"Oferujemy pełne wsparcie techniczne związane  z uruchomieniem maszyn, szkoleniem pracowników, serwisem gwarancyjnym oraz pogwarancyjnym."}></PlainCard>
                 <PlainCard imageSrc={MACHINE_1} type={"modern"} TagText={"Maszyny pakujące"} title={"Maszyny pakujące"}></PlainCard>
                 <PlainCard imageSrc={CHEESE} type={"modern"} TagText={"Mleczarstwo"} title={"Przemysł mleczarski"}></PlainCard>
-                <PlainCard imageSrc={WORKER} type={"modern"} TagText={"Nasz zespół"} title={"Poznaj naszych fachowców"}></PlainCard>
+                <PlainCard id={"link"} imageSrc={WORKER} type={"modern"} TagText={"Nasz zespół"} title={"Poznaj naszych fachowców"} onClick={handleCardClick}></PlainCard>
                 <PlainCard>
                     <div className="list_wrapper">
                         <h3>Nasza oferta</h3>

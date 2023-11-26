@@ -5,7 +5,7 @@ import Tag from '../tag/Tag';
 
 
 
-const PlainCard = ({ id, title, imageSrc, description, type, children, TagText }) => {
+const PlainCard = ({ id, title, imageSrc, description, type, children, TagText, onClick }) => {
 
 
     const cardClass = `plain-card plain-card--${type}`;
@@ -27,9 +27,9 @@ const PlainCard = ({ id, title, imageSrc, description, type, children, TagText }
 
     if (type == "modern") {
         return (
-            <div className={cardClass}>
+            <div id={id} className={cardClass} onClick={onClick}>
                 <Tag text={TagText} />
-                <div className='plain-card__content'>
+                <div className='plain-card__content' >
                     {title && <span className="plain-card--modern__title">{title}</span>}
                     {imageSrc && <img className='plain-card__ilustration' src={imageSrc}></img>}
                 </div>

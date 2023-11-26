@@ -27,14 +27,15 @@ export const ButtonColor = {
 };
 
 function Button(props) {
-    const { id, type, size, color, shape, text, append, onClick, submit, disabled, linkTo } = props;
+    const { id, type, size, color, shape, text, append, onClick, submit, disabled, linkTo, selected } = props;
 
     const sizeClass = size ? `button--${size}` : '';
     const colorClass = color ? `button--${color}` : '';
     const shapeClass = shape ? `button--${shape}` : "";
     const appendedClass = append ? 'button--appended' : '';
+    const selectedClass = selected ? 'button--selected' : '';
 
-    const buttonClass = `button button--${type} ${sizeClass} ${colorClass} ${appendedClass} ${shapeClass}`;
+    const buttonClass = `button button--${type} ${sizeClass} ${colorClass} ${appendedClass} ${shapeClass} ${selectedClass}`;
 
     if (!linkTo) {
         return (

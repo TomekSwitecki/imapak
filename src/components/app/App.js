@@ -1,24 +1,19 @@
-import React from "react";
-import { Fragment } from "react";
-import { Hero } from "../hero/Hero";
-import { Navbar } from "../navbar/Navbar";
-import { ClientsSection } from "../client/ClientsSection";
-import { ProcessSection } from "../process/ProcessSection";
-import { CardsSection } from "../CardsSection/CardsSection";
-import { PartnersSection } from "../PartnersSection/PartnersSection";
-import { Footer } from "../footer/Footer";
-export function App() {
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LandingPage } from '../LandingPage/LandingPage';
+import { AboutUs } from '../AboutUs/AboutUs';
+
+const App = () => {
   return (
-    <Fragment>
-      <Navbar />
-      <div className="app">
-        <Hero />
-        <ClientsSection />
-        <ProcessSection />
-        <CardsSection />
-        <PartnersSection />
-      </div>
-      <Footer />
-    </Fragment >
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;

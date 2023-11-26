@@ -1,0 +1,176 @@
+@import "../../colors.scss";
+@import "../../anim.scss";
+
+
+
+
+.contact-section__wrapper {
+    font-family: Nippo;
+    border-radius: 32px;
+    border: 1px solid $black;
+    background: $white;
+
+    display: flex;
+    padding: 48px;
+    align-items: flex-start;
+    min-height: 1024px;
+
+    width: fit-content;
+}
+
+.contact-section {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    box-shadow: 0px 4.26158px 2.21381px 0px rgba(0, 0, 0, 0.05), 0px 10.24116px 5.32008px 0px rgba(0, 0, 0, 0.08), 0px 19.28319px 10.01724px 0px rgba(0, 0, 0, 0.09), 0px 34.39791px 17.86905px 0px rgba(0, 0, 0, 0.11), 0px 64.33752px 33.42209px 0px rgba(0, 0, 0, 0.14), 0px 154px 80px 0px rgba(0, 0, 0, 0.19);
+}
+
+.contact-form {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    // max-width: 595px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    background: $white;
+
+    border: 1px solid $square-card-stroke;
+
+
+    .contact-form__title {
+        color: $black;
+        text-align: left;
+        font-family: Nippo;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 105%;
+        margin-bottom: 10px;
+    }
+
+    .contact-form__subtitle {
+        color: $primary;
+        font-family: Nippo;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        display: flex;
+        max-width: 350px;
+    }
+
+    .toggle-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+.contact-section__arrow {
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 136px;
+    right: 20px;
+}
+
+.contact-section__left {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $black;
+    flex-basis: 60%;
+}
+
+
+.contact-section__heading {
+    color: $black;
+    font-family: Nippo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.contact-section__ilustration {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    height: 464px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+
+    svg {
+        position: absolute;
+        object-fit: cover;
+        width: 150%;
+        mix-blend-mode: luminosity;
+        transform: rotateZ(-8deg);
+        z-index: 2;
+    }
+}
+
+.contact-form__inputfields {
+    margin: 48px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+
+
+@media (min-width: 1300px) {
+    #contact_section.section__container {
+        padding: 64px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .contact-section__wrapper {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        border-radius: 30px;
+        border: none;
+        width: 85%;
+    }
+
+
+    form {
+        width: 100%;
+    }
+
+    .contact-form {
+        border-radius: 0;
+        padding: 32px;
+        width: 100%;
+
+        .contact-form__title {
+            font-size: 36px;
+        }
+
+        .contact-form__subtitle {
+            font-size: 16px;
+        }
+    }
+
+
+}

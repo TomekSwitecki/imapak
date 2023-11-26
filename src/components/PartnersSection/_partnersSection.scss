@@ -1,6 +1,7 @@
 .partners_wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     .photo_header_container {
         position: relative;
@@ -53,6 +54,10 @@
 
 @media screen and (max-width: 620px) {
     .partners_wrapper {
+        .header {
+            bottom: -5px;
+        }
+
         .header__left {
             flex-grow: 1;
             width: 100%;
@@ -61,6 +66,11 @@
 
         .header__right {
             display: none;
+        }
+
+        .header__left {
+            max-height: unset;
+            height: fit-content;
         }
     }
 }

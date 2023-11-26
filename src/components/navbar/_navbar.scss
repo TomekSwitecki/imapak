@@ -53,7 +53,7 @@
 
   .navbar__content {
     flex-direction: column;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
     @include smooth;
   }
 
@@ -85,9 +85,5 @@
     gap: 6px;
   }
 
-  .navbar__content {
-    .logotype_img {
-      display: none;
-    }
-  }
+
 }

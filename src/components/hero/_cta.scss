@@ -43,6 +43,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 102px;
+    @include smooth;
   }
 
 
@@ -96,6 +97,29 @@
     .cta-title {
       font-size: 56px;
       line-height: 86px;
+      @include smooth;
     }
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+  .cta-title__container {
+    background-color: $black !important;
+
+    .cta-title {
+      color: $white;
+    }
+  }
+
+  .cta__wrapper .cta-title {
+    font-size: 40px;
+    line-height: 64px;
+    font-weight: 500;
+    @include smooth;
+  }
+
+  .hero__container::after {
+    display: none;
   }
 }

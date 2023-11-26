@@ -13,14 +13,14 @@
   color: $white;
   padding: 12px 24px;
 
-  background: $primary;
-
+  background: $black;
+  border-radius: 4px;
   align-items: center;
   @include smooth;
 }
 
 .hamburger:hover {
-  background: $black;
+  background: $primary;
   @include smooth;
 
   .hamburger__lines-wrapper {

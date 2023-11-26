@@ -7,6 +7,10 @@ img {
   user-select: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,4 +51,13 @@ body {
   .app {
     padding-inline: 24px;
   }
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .app {
+    padding: 0;
+  }
+
 }
