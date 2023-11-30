@@ -36,7 +36,7 @@ export const AboutUs = () => {
                     </div>
                     <div className="about-us__cards">
                         <div className="about-us__header">
-                            <PlainCard description={"Wykwalifikowany zespół specjalistów z Polski oraz z zagranicy od wielu lat zapewnia naszym klientom profesjonalną i miłą obsługę, a także doradztwo techniczne."}></PlainCard>
+                            <PlainCard description={"Rodzinna firma założona w 1993 roku z biurem w Łodzi posiada w swoim zespole wyspecjalizowanych sprzedawców oraz wyszkolonych inżynierów. Nasz zespół realizuje projekty od początku po ich ukończenie. "}></PlainCard>
                             <img className="shape__decoration" src={SHAPE}></img>
                             <img className="shape__decoration" src={SHAPE2}></img>
                         </div>

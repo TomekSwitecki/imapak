@@ -24,8 +24,11 @@ export function ProcessSection() {
                         <span className="text text--regular">
                             Modernizujemy zakłady produkcyjne, metody pakowania i
                             magazynowania na polskim rynku.
-                            Specjalizujemy się w dostarczaniu nowoczesnych
-                            produktów wysokiej jakości, które pozwalają naszym klientom wyprzedzać rynek.
+
+                            Dostarczamy nowoczesne maszyny wysokiej jakości do pakowania jednostkowego, zbiorczego, paletyzacji oraz owijania.
+                            <br />
+
+
 
                         </span>
                         <br />

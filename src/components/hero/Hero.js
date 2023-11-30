@@ -5,6 +5,7 @@ import Tag from "../tag/Tag";
 import HERO_PHOTO from "../../resources/HERO_PHOTO.png";
 import HERO_PHOTO_BOTTOM_RIGHT from "../../resources/HERO_BOTTOM_RIGHT_ACCENT_PHOTO.png";
 import HERO_PHOTO_BOTTOM_LEFT from "../../resources/HERO_BOTTOM_LEFT.png";
+import AutoPlayVideo from "../AutoPlayVideo";
 export function Hero() {
   return (
     <div className="hero__container">
@@ -23,7 +24,8 @@ export function Hero() {
         </div>
       </div>
       <div className="hero__container--right">
-        <img src={HERO_PHOTO}></img>
+        {/* <img src={HERO_PHOTO}></img> */}
+        <AutoPlayVideo></AutoPlayVideo>
         <img src={HERO_PHOTO_BOTTOM_RIGHT}></img>
       </div>
     </div>

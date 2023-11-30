@@ -60,7 +60,7 @@ export function CardsSection() {
                         {list2}
                     </div>
                 </PlainCard>
-                <PlainCard description={"Nasi inżynierzy  ZAPEWNIAJĄ  szybką oraz fachową pomoc techniczną. Zapewniamy części zamienne do maszyn oraz serwis i  wsparcie techniczne."}></PlainCard>
+                <PlainCard description={"Dbamy o Klienta od instalacji, aż po serwis pogwarancyjny. Nasi wyszkoleni inżynierowie są do dyspozycji Klienta, aby wspomóc telefonicznie lub na miejscu w zakładzie. Jesteśmy autoryzowanym serwisem firm z którymi współpracujemy."}></PlainCard>
             </div>
         </Container>
 

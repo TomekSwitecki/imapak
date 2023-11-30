@@ -81,7 +81,7 @@ export function Contact() {
                 <div id='contact-form' className="contact-form">
                     <form onSubmit={handleSubmit} ref={formRef}>
                         <h2 className='contact-form__title'>Formularz kontaktowy</h2>
-                        <span className='contact-form__subtitle'>Nasz wykwalifikowany zespół specjalistów chętnie odpowie na każde pytanie.</span>
+                        <span className='contact-form__subtitle'>Jeśli nasz zespół może jakoś pomóc koniecznie skontaktuj się z nami za pomocą tego formularza lub zadzwoń!</span>
 
                         <div className='contact-form__inputfields'>
                             <Inputfield label={"Imię"} value={formData.name}

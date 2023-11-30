@@ -18,7 +18,7 @@ export function CTA() {
       </div>
       <div className="cta__content-wrapper">
         <div className="cta__paragraph">
-          Wspieramy wdrażania procesów automatyzacji
+          Wspieramy procesy optymalizacji i modernizacji
           <br />
           zakładów produkcyjnych
         </div>
