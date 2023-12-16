@@ -20,10 +20,9 @@ export function ProcessSection() {
                     </div>
                     <div className="proccess_container--right">
                         <Tag text={"Wyprzedź rynek"}></Tag>
-                        <h1>Wspieramy pełen proces</h1>
+                        <h1>Dostarczamy najnowszą technologię</h1>
                         <span className="text text--regular">
-                            Modernizujemy zakłady produkcyjne, metody pakowania i
-                            magazynowania na polskim rynku.
+                            Modernizujemy zakłady produkcyjne, metody pakowania, kartonowania i paletyzacji na polskim rynku.
 
                             Dostarczamy nowoczesne maszyny wysokiej jakości do pakowania jednostkowego, zbiorczego, paletyzacji oraz owijania.
                             <br />

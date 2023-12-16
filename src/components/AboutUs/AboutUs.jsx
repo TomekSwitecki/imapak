@@ -13,7 +13,8 @@ import SECTION_HEADER_PHOTO from "../../resources/ABOUT_PHOTO_SECTION.png";
 import PlainCard from "../PlainCard/PlainCard";
 import SHAPE from "../../resources/SHAPE.png";
 import SHAPE2 from "../../resources/SHAPE 2.png";
-import MICHAL_PIETRASIK from "../../resources/MICHALPIETRASIK.png"
+import MICHAL_PIETRASIK from "../../resources/MICHALPIETRASIK.png";
+import NO_PIC from "../../resources/NO_PIC.png";
 import PersonCard from "./PersonCard";
 export const AboutUs = () => {
     return (
@@ -44,35 +45,32 @@ export const AboutUs = () => {
                             <PersonCard
                                 name="MICHAŁ PIETRASIK"
                                 email="michal.pietrasik@imapak.eu"
-                                telNumber="+48 42 258 96 75"
-                                mobileNumber="+48 42 258 96 75"
-                                faxNumber="+48 42 258 96 75"
+                                telNumber="+48 605 379 411"
                                 photoSrc={MICHAL_PIETRASIK}
+                                role={"Sprzedaż"}
                             />
                             <PersonCard
+                                name="PIOTR PIETRASIK"
+                                email="piotr.pietrasik@imapak.eu"
+                                telNumber="+48 601 346 523"
+                                photoSrc={NO_PIC}
+                                role={"Sprzedaż"}
+                            />
+                            <PersonCard
+                                name="AGNIESZKA WIŚNIEWSKA"
+                                email="agnieszka.wisniewska@imapak.eu"
+                                telNumber="+48 605 379 693"
+                                role={"Serwis i części zamienne"}
+                                photoSrc={NO_PIC}
+                            />
+                            {/* <PersonCard
                                 name="MICHAŁ PIETRASIK"
                                 email="michal.pietrasik@imapak.eu"
                                 telNumber="+48 42 258 96 75"
                                 mobileNumber="+48 42 258 96 75"
                                 faxNumber="+48 42 258 96 75"
                                 photoSrc={MICHAL_PIETRASIK}
-                            />
-                            <PersonCard
-                                name="MICHAŁ PIETRASIK"
-                                email="michal.pietrasik@imapak.eu"
-                                telNumber="+48 42 258 96 75"
-                                mobileNumber="+48 42 258 96 75"
-                                faxNumber="+48 42 258 96 75"
-                                photoSrc={MICHAL_PIETRASIK}
-                            />
-                            <PersonCard
-                                name="MICHAŁ PIETRASIK"
-                                email="michal.pietrasik@imapak.eu"
-                                telNumber="+48 42 258 96 75"
-                                mobileNumber="+48 42 258 96 75"
-                                faxNumber="+48 42 258 96 75"
-                                photoSrc={MICHAL_PIETRASIK}
-                            />
+                            /> */}
                         </div>
 
                     </div>

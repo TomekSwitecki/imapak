@@ -68,6 +68,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+
+        .plain-card {
+            padding: 32px 32px;
+        }
     }
 
     .plain-card {
@@ -113,6 +117,7 @@
             display: flex;
             flex-direction: row;
             gap: 12px;
+            font-size: 18px;
 
             .contact__item-label {
                 display: flex;
@@ -121,7 +126,7 @@
                 align-items: center;
                 color: #625F60;
                 font-family: Nippo;
-                font-size: 16px;
+                // font-size: 16px;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;

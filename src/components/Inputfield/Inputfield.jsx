@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Inputfield = ({ label, value, onChange, placeholder, isTextArea, name, type }) => {
+const Inputfield = ({ label, value, onChange, placeholder, isTextArea, name, type, required }) => {
     if (isTextArea) {
         return (
             <div className="inputfield">
@@ -11,6 +11,7 @@ const Inputfield = ({ label, value, onChange, placeholder, isTextArea, name, typ
                     onChange={onChange}
                     className="input"
                     name={name}
+                    required={required}
                 />
             </div>
         );
@@ -25,6 +26,7 @@ const Inputfield = ({ label, value, onChange, placeholder, isTextArea, name, typ
                     className="input"
                     name={name}
                     type={type}
+                    required={required}
                 />
             </div>
         );

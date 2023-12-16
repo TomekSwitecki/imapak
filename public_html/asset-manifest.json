@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91acd5bd.css",
+    "main.js": "/static/js/main.b2d23119.js",
+    "static/media/PFM1.mp4": "/static/media/PFM1.5f07b21fa2e20469493e.mp4",
+    "static/media/ABOUT_PHOTO_SECTION.png": "/static/media/ABOUT_PHOTO_SECTION.ecc12d7fd7348ade10b3.png",
+    "static/media/PARTNERS_HEADER_IMG.png": "/static/media/PARTNERS_HEADER_IMG.d69469fff097c8b14479.png",
+    "static/media/HERO_PHOTO.png": "/static/media/HERO_PHOTO.3150f12cf89a6287e397.png",
+    "static/media/PROCES_PHOTO.png": "/static/media/PROCES_PHOTO.a3400c042b125118a418.png",
+    "static/media/CHEESE.png": "/static/media/CHEESE.dc772ea5ad11578fbe20.png",
+    "static/media/MACHINE_1.png": "/static/media/MACHINE_1.e55cb1abe0e2494cd7e4.png",
+    "static/media/MICHALPIETRASIK.png": "/static/media/MICHALPIETRASIK.7b4716c2004125aa4ff3.png",
+    "static/media/WORKER_.png": "/static/media/WORKER_.75db3260bc71a2dadbf2.png",
+    "static/media/HERO_PATTERN.png": "/static/media/HERO_PATTERN.8bb1233566a35b566a34.png",
+    "static/media/SHAPE 2.png": "/static/media/SHAPE 2.32dd2964de44bb90eaa5.png",
+    "static/media/CTA_BG.png": "/static/media/CTA_BG.4e974842f7c202ec5a17.png",
+    "static/media/LOGO.png": "/static/media/LOGO.5733a210212433d99a52.png",
+    "static/media/HERO_BOTTOM_RIGHT_ACCENT_PHOTO.png": "/static/media/HERO_BOTTOM_RIGHT_ACCENT_PHOTO.bd3363532d1e57df18ff.png",
+    "static/media/HERO_BOTTOM_LEFT.png": "/static/media/HERO_BOTTOM_LEFT.cdd0e968196dcf98ae15.png",
+    "static/media/POLMLEK.png": "/static/media/POLMLEK.7ee1253491c743f8f0dc.png",
+    "static/media/PWR.png": "/static/media/PWR.dfa803184b208e07da31.png",
+    "static/media/ŁOWICZ.png": "/static/media/ŁOWICZ.a78ae936f5172fee8feb.png",
+    "static/media/ALPMA.png": "/static/media/ALPMA.33da9268a87329aec978.png",
+    "static/media/MLEKOVITA.png": "/static/media/MLEKOVITA.b97ed1430973c50f7499.png",
+    "static/media/FOOTER_LOGO.png": "/static/media/FOOTER_LOGO.d7ad809e0b6c99623e5c.png",
+    "static/media/LOGOTYPE.svg": "/static/media/LOGOTYPE.a96dd174d2b0b01b70ad364aa092f10d.svg",
+    "index.html": "/index.html",
+    "main.91acd5bd.css.map": "/static/css/main.91acd5bd.css.map",
+    "main.b2d23119.js.map": "/static/js/main.b2d23119.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91acd5bd.css",
+    "static/js/main.b2d23119.js"
+  ]
+}

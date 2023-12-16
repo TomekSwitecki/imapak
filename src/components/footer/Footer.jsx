@@ -49,7 +49,7 @@ export function Footer(props) {
 
                     <div className="footer__card footer__card--highlight">
                         <div className="footer__card-content">
-                            <span className="footer__card-text--bold">+42 258 96 75</span>
+                            <span className="footer__card-text--bold">605 379 411</span>
 
                             <div className="footer__hr"></div>
                         </div>

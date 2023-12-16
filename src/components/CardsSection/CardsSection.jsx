@@ -14,9 +14,9 @@ export function CardsSection() {
 
     const navigate = useNavigate();
     const categories1 = [
-        "Maszyny pakujące - Pionowe/Poziome",
+        "Maszyny pakujące - flowpack, doypack, pionowe VFFS",
         "Wagi wielogłowicowe",
-        "Kartnoiarki",
+        "Kartoniarki",
         "Paletyzatory",
     ];
 
@@ -25,12 +25,10 @@ export function CardsSection() {
     ));
 
     const categories2 = [
-        "Urządzenia do pakowania typu big bag",
-        "Automatyczne magazyny",
         "Linia do produkcji twardego sera",
         "linie do produkcji MOZZARELLI I KASHKVAL",
         "Krojenie i wiórkowanie sera",
-        "urządzenia do produkcju peletu,biomasy"
+        "Pakowanie różnych rodzajów serów"
     ];
     const handleCardClick = () => {
         navigate("/about-us");
@@ -43,8 +41,9 @@ export function CardsSection() {
     return (
         <Container>
             <div id="about_section" className="cards_wrapper">
-                <PlainCard title={"NOWOCZESNE, WYDAJNE METODY PAKOWANIA I MAGAZYNOWANIA, KTÓRE POZWALAJĄ NASZYM KLIENTOM WYPRZEDAĆ RYNEK"}></PlainCard>
-                <PlainCard imageSrc={ICON_DOLLAR} description={"Doradzamy oraz pomagamy w uzyskaniu środków finansowych pochodzących z dotacji z Unii  Europejskiej jak również z kredytów bankowych."}></PlainCard>
+                <PlainCard title={"NOWOCZESNE, WYDAJNE METODY PAKOWANIA I MAGAZYNOWANIA, KTÓRE POZWALAJĄ NASZYM KLIENTOM WYPRZEDZAĆ RYNEK"}></PlainCard>
+                {/* <PlainCard imageSrc={ICON_DOLLAR} description={"Doradzamy oraz pomagamy w uzyskaniu środków finansowych pochodzących z dotacji z Unii  Europejskiej jak również z kredytów bankowych."}></PlainCard> */}
+                <PlainCard id="empty-card" empty ></PlainCard>
                 <PlainCard imageSrc={ICON_SHIELD} description={"Oferujemy pełne wsparcie techniczne związane  z uruchomieniem maszyn, szkoleniem pracowników, serwisem gwarancyjnym oraz pogwarancyjnym."}></PlainCard>
                 <PlainCard imageSrc={MACHINE_1} type={"modern"} TagText={"Maszyny pakujące"} title={"Maszyny pakujące"}></PlainCard>
                 <PlainCard imageSrc={CHEESE} type={"modern"} TagText={"Mleczarstwo"} title={"Przemysł mleczarski"}></PlainCard>

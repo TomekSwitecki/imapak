@@ -35,41 +35,36 @@ const success = () => toast.success('Wiadomość została dostarczona!', {
 });
 
 export function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     const formRef = useRef();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!formData.name || !formData.email || !formData.message) {
-            error();
-            return;
-        }
 
-
-        const emailData = {
-            ...formData,
-
+        const formData = {
+            from_name: name,
+            from_email: email,
+            message: message,
         };
 
-        emailjs.send('service_8iw9vjs', 'template_rlv5bo1', emailData, 'ZaVhnKcgbVGzajia4')
-            .then((result) => {
-
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-        });
+        emailjs
+            .send('service_kheetrw', 'template_xw4jik6', formData, 'wbky4GAeciMCv6Q06')
+            .then(
+                (result) => {
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                },
+                (error) => {
+                    error();
+                }
+            );
         success();
-        formRef.current.reset();
+        // formRef.current.reset();
     };
-
 
 
     return (
@@ -84,18 +79,24 @@ export function Contact() {
                         <span className='contact-form__subtitle'>Jeśli nasz zespół może jakoś pomóc koniecznie skontaktuj się z nami za pomocą tego formularza lub zadzwoń!</span>
 
                         <div className='contact-form__inputfields'>
-                            <Inputfield label={"Imię"} value={formData.name}
-                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            <Inputfield label={"Imię"}
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                                 name="name"
-                                type={"text"} />
-                            <Inputfield label={"Email kontaktowy"} value={formData.email}
-                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                type={"text"}
+                                required />
+                            <Inputfield label={"Email kontaktowy"}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 name="email"
-                                type="email" />
-                            <Inputfield label={"W czym możemy pomóc?"} value={formData.message}
-                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                type="email"
+                                required />
+                            <Inputfield label={"W czym możemy pomóc?"}
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                                 isTextArea
-                                name="message" />
+                                name="message"
+                                required />
                         </div>
 
                         <Button

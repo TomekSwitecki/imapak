@@ -13,7 +13,7 @@ export function CTA() {
     <div className="cta__wrapper">
       <div className="cta-title__container">
         <div className="cta-title">
-          Nowoczesne zakłady produkcyjne
+          Nowoczesne linie pakujące
         </div>
       </div>
       <div className="cta__content-wrapper">

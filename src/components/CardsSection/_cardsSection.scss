@@ -21,6 +21,9 @@
     }
 }
 
-#long_list {
-    height: fit-content;
+
+@media (max-width: 997px) {
+    #empty-card {
+        display: none;
+    }
 }
