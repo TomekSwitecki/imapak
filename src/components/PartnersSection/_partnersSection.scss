@@ -40,10 +40,34 @@
 
 }
 
+.slider-track {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: slideAnimation 25s linear infinite;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-5%);
+    }
+}
+
+
 .partners-cards_wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    animation: slideAnimation 25s linear infinite;
 }
 
 @media screen and (max-width: 998px) {

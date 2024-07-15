@@ -41,7 +41,7 @@ export function CardsSection() {
     return (
         <Container>
             <div id="about_section" className="cards_wrapper">
-                <PlainCard title={"NOWOCZESNE, WYDAJNE METODY PAKOWANIA I MAGAZYNOWANIA, KTÓRE POZWALAJĄ NASZYM KLIENTOM WYPRZEDZAĆ RYNEK"}></PlainCard>
+                <PlainCard title={"NOWOCZESNE, WYDAJNE METODY PAKOWANIA, KARTONOWANIA I PALETYZACJI, KTÓRE POZWALAJĄ NASZYM KLIENTOM WYPRZEDZAĆ RYNEK"}></PlainCard>
                 {/* <PlainCard imageSrc={ICON_DOLLAR} description={"Doradzamy oraz pomagamy w uzyskaniu środków finansowych pochodzących z dotacji z Unii  Europejskiej jak również z kredytów bankowych."}></PlainCard> */}
                 <PlainCard id="empty-card" empty ></PlainCard>
                 <PlainCard imageSrc={ICON_SHIELD} description={"Oferujemy pełne wsparcie techniczne związane  z uruchomieniem maszyn, szkoleniem pracowników, serwisem gwarancyjnym oraz pogwarancyjnym."}></PlainCard>

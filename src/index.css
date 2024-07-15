@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .app {
   scroll-behavior: smooth;
   display: grid;
@@ -1011,10 +1012,31 @@ h1::after {
   flex-shrink: 1;
 }
 
+.slider-track {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  animation: slideAnimation 25s linear infinite;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}
 .partners-cards_wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  animation: slideAnimation 25s linear infinite;
 }
 
 @media screen and (max-width: 998px) {
@@ -1796,6 +1818,10 @@ body {
   background-size: 80px;
 }
 
+#root {
+  overflow: hidden;
+}
+
 .grid-fill {
   max-width: 1440px;
   grid-column: 1/span 12;
@@ -1826,4 +1852,73 @@ body {
   .app {
     padding: 0;
   }
+}
+/**
+ * @license
+ *
+ * Font Family: Nippo
+ * Designed by: Manushi Parikh
+ * URL: https://www.fontshare.com/fonts/nippo
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Nippo Variable(Variable font)
+ * Nippo Extralight
+ * Nippo Light
+ * Nippo Regular
+ * Nippo Medium
+ * Nippo Bold
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+@font-face {
+  font-family: "Nippo-Variable";
+  src: url("/src/fonts/Nippo-Variable.woff2") format("woff2"), url("/src/fonts/Nippo-Variable.woff") format("woff"), url("/src/fonts/Nippo-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nippo-Extralight";
+  src: url("/src/fonts/Nippo-Extralight.woff2") format("woff2"), url("/src/fonts/Nippo-Extralight.woff") format("woff"), url("/src/fonts/Nippo-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nippo-Light";
+  src: url("/src/fonts/Nippo-Light.woff2") format("woff2"), url("/src/fonts/Nippo-Light.woff") format("woff"), url("/src/fonts/Nippo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nippo-Regular";
+  src: url("/src/fonts/Nippo-Regular.woff2") format("woff2"), url("/src/fonts/Nippo-Regular.woff") format("woff"), url("/src/fonts/Nippo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nippo-Medium";
+  src: url("/src/fonts/Nippo-Medium.woff2") format("woff2"), url("/src/fonts/Nippo-Medium.woff") format("woff"), url("/src/fonts/Nippo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nippo-Bold";
+  src: url("/src/fonts/Nippo-Bold.woff2") format("woff2"), url("/src/fonts/Nippo-Bold.woff") format("woff"), url("/src/fonts/Nippo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
